@@ -50,3 +50,41 @@ function modifiedForLoop(){
 		}
 	}
 }
+
+// Array Manipulation
+$studentNumbers = array('2020-1923', '2020-1924', '2020-1925', '2020-1926', '2020-1927'); //before PHP 5.4
+$studentNumbers = ['2020-1923', '2020-1924', '2020-1925', '2020-1926', '2020-1927']; // introduced on PHP 5.4
+
+// Simple Arrays
+$grades = [98.5, 94.3, 89.2, 90.1];
+$computerBrands = ['Acer', 'Asus', 'Lenovo', 'Neo', 'Redfox', 'HP', 'Toshiba', 'Fujitsu'];
+$tasks = [
+	'drink html',
+	'eat javascript',
+	'inhale css',
+	'bake sass'
+];
+
+// Associative Array
+$gradePeriods = ['firstGrading' => 98.5, 'secondGrading' => 94.3,'thirdGrading' => 89.2,'fourthGrading' => 90.1];
+
+// Two-dimensional array
+$heroes = [
+	['iron man', 'thor', 'hulk'],
+	['wolverine', 'cyclops', 'storm'],
+	['darna', 'captain barbel', 'lastikman']
+];
+
+// Two-dimensional associative array
+$ironManPowers = [
+	'regular' => ['repulsor blast', 'rocket punch'],
+	'signature move' => ['unibeam']
+];
+
+// Array Sorting
+$sortedBrands = $computerBrands;
+$reverseSortedBrands = $computerBrands;
+
+// Sort Arrays
+sort($sortedBrands);
+rsort($reverseSortedBrands);
