@@ -42,7 +42,7 @@
 	</ul>
 
 	<h3>Multidimensional Array</h3>
-	<!--<ul>
+	<!-- <ul>
 		<?php
 			foreach($heroes as $team){
 				foreach($team as $member){
@@ -52,7 +52,8 @@
 			}
 		?>
 		
-	</ul>-->
+	</ul> -->
+
 	<!-- Displaying a specific element in 2dim array -->
 	<p><?php echo $heroes[2][2]?></p>
 
@@ -76,6 +77,25 @@
     <?php array_push($computerBrands, 'Apple') ?>
     <pre><?php print_r($computerBrands); ?></pre>
 
+    <?php array_unshift($computerBrands, 'Dell');?>
+    <pre><?php print_r($computerBrands); ?></pre>
 
+    <h3>Remove</h3>
+    <?php array_pop($computerBrands); ?>
+    <pre><?php print_r($computerBrands); ?></pre>
+
+    <?php array_shift($computerBrands) ;?>
+    <pre><?php print_r($computerBrands) ;?></pre>
+
+    <h3>Others</h3>
+
+    <h4>Count</h4>
+    <pre><?php echo count($computerBrands);?></pre>
+
+    <h4>In Array</h4>
+    <p><?php echo searchBrand($computerBrands, 'Apple'); ?></p>
+
+    <h4>Reversed Grade periods</h4>
+    <pre><?php print_r($reversedGradePeriods);?></pre>
 </body>
 </html>

@@ -88,3 +88,14 @@ $reverseSortedBrands = $computerBrands;
 // Sort Arrays
 sort($sortedBrands);
 rsort($reverseSortedBrands);
+
+// Other Array Functions
+// brands = array. brand = elements
+// in_array(needle, haystack)
+// needle is the brand we'll be looking for
+// haystack yung array na panggagalingan
+function searchBrand($brands, $brand){
+	return (in_array($brand, $brands)) ? "$brand is in the array" : "$brand is not in the array.";
+}
+
+$reversedGradePeriods = array_reverse($gradePeriods);
